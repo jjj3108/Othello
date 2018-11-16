@@ -56,9 +56,8 @@ void Board::find_block(int turn) {//현재 턴의 모든 블록 찾기
 	}
 	return;
 }
-bool Board::landstone(int turn, int location) {
+bool Board::landstone(int turn, int location) {//해당위치에 돌을 놓는다. 놓을 수 없는 자리면 false return
 	int real_direction, next_loc;
-	stack<int> s;
 	if (board[location / 10][location % 10] != -1) return false;
 	for (int direction = 1; direction < 9; direction++) {
 		real_direction = getdirection(direction);

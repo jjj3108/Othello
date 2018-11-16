@@ -8,7 +8,6 @@ Gameplay::Gameplay()
 Gameplay::~Gameplay() {}
 void Gameplay::startgame()
 {
-	int location;
 	b.printBoard();
 	while (true) {
 		if (b.getturn()==1) cout << "please input row column player ¡Ü: ";
